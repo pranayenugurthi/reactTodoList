@@ -1,0 +1,84 @@
+.task-item{
+    background-color: beige;
+    width: 40%;
+    min-width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 8px;
+    box-shadow: 0px 0px 4px 2px #aaa6a6;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+    
+}
+.task-item:hover{
+    box-shadow: 0px 0px 8px 1px black ;
+}
+.task-text{
+    margin: 0px;
+    font-size: 14px;
+    font-weight: 500;
+    text-overflow:clip;
+    width: fit-content;
+    color: black;
+}
+.task-label{
+    color:rgba(0, 0, 0, 0.87);
+    margin-right: 5px;
+}
+.task-btnFlex{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+    margin-top: 8px;
+}
+.task-btn-delete{
+   
+    background-color: #a30000c4;
+  
+    box-shadow: 0px 0px 3px 1px rgb(0 0 0) inset;
+}
+.task-btn-completed{
+    box-shadow: 0px 0px 6px 2px black inset;
+    background-color: #007bffdd;
+}
+.task-btn-edit{ 
+    background-color: #949103bf;
+    box-shadow: 0px 0px 3px 1px rgb(0 0 0) inset;
+}
+button{
+    color: #fff;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    padding: 6px 14px;
+    text-shadow: 1px 0px 1px black;
+}
+button:hover{
+    font-weight: 600;
+}
+.task-completed{
+    background-color: #178701c7;
+}
+.danger-zone{
+    background-color: #a30000c4;
+}
+.taskId{
+    text-align: center;
+    color: rgba(0, 0, 0, 0.771);
+    font-size: 12px;
+    margin-top: 0px;
+}
+@media (max-width:700px){
+    .task-item{
+        margin: 0px;
+        width: 96%;
+        padding: 15px;
+    }
+    button{
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+}

@@ -1,0 +1,95 @@
+.input-component{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.548) inset;
+    background-color: rgb(208, 208, 196);
+}
+.input-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  min-height: 120px;
+  height: fit-content;
+  border: 1px solid #ccc;
+  padding: 10px 0px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 4px 2px rgba(18, 18, 18, 0.1);
+  background-color: beige;
+}
+.input-container{
+display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 90%;
+    gap: 10px;
+}
+.task-input{
+  width: 80%;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.add-task-button{
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 120px;
+  font-weight: 600;
+  box-shadow: 0px 0px 6px 1px black inset;
+}
+
+.newTask-input-label{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.newTask-label{
+  font-size: 14px;
+  font-weight: 500;
+}
+.newTask-select{
+  padding: 4px 6px;
+}
+@media (max-width:700px){
+  .input-container{
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 94%;
+    gap: 0px;
+  }
+  .input-content{
+    gap: 8px;
+    height: fit-content;
+    min-height: 100px;
+  }
+  .newTask-input-label{
+    width: 35%;
+    max-width: max-content;
+
+  }
+  
+  .newTask-select{
+    width: 100%;
+    max-width: fit-content;
+    padding: 4px 0px;
+  }
+  .add-task-button{
+    width: 65px;
+  }
+  .task-input{
+    min-width: 165px;
+    box-sizing: border-box;
+  }
+}

@@ -1,38 +1,177 @@
-.App {
-  text-align: center;
+.todolist-page{
+     width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 25px;
+    overflow-y: auto;
+    box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.548) inset;
+    background-color: rgb(208, 208, 196);
+        box-sizing: border-box;
+    padding: 20px;
+}
+.todolist-heading{
+  font-size: 24px;
+  margin: 0px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.task-heading{
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #333;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+.add-task-button:hover{
+  background-color: #0056b3;
+}
+.task-list{
+     list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 0px;
+    width: 100%;
+    min-width: 300px;
+    overflow: auto;
+}
+.input-task-flex{
+      justify-content: space-around;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+
+}
+.tasklist-heading{
+  font-size: 20px;
+  color: black;
+  margin: 0px;
+}
+.filters-heading{
+  font-size: 15px;
+  font-weight: 600;
+  color: #333;
+  margin: 0px;
+}
+.newTask-head{
+  font-size: 15px;
+  font-weight: 600;
+  color: #333;
+  margin: 0px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.filters-newTask-flexContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 40%;
+    height: 80%;
+}
+.filters-flexContainer{
+      display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    box-shadow: 0px 0px 4px 2px #aaa6a6;
+    padding: 18px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    width: 90%;
+}
+.newTAsk-flexContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    box-shadow: 0px 0px 4px 2px #aaa6a6;
+    padding: 18px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    width: 90%;
+}
+.todolist-flexContainer{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  width: 95%;
+  height: 100%;
+  justify-content: space-evenly;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.tasklist-flexContainer{
+      display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 18px;
+    border-radius: 4px;
+    box-shadow: 0px 0px 4px 2px #aaa6a6;
+    min-height: 80%;
+    height: 90%;
+    max-height: 100%;
+    width: 60%;
+    box-sizing: border-box;
 }
 
-.App-link {
-  color: #61dafb;
+@media (max-width:1000px){
+  .tasklist-flexContainer{
+    width: 45%;
+  }
+  .filters-newTask-flexContainer{
+    width: 55%;
+  }
+  .todolist-flexContainer{
+    width: 98%;
+  }
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (max-width:700px){
+  .todolist-page{
+    padding: 10px;
+    overflow-y: auto;
+    gap: 10px;
+    box-sizing: border-box;
+    height: 100%;
   }
-  to {
-    transform: rotate(360deg);
+  .todolist-flexContainer{
+    flex-direction: column;
+    width: 100%;
+    gap: 15px;
   }
+  .filters-newTask-flexContainer{
+    width: 100%;
+    gap: 15px;
+  }
+  .filters-flexContainer{
+    width: 96%;
+    padding: 10px;
+    order: 1;
+  }
+  .newTAsk-flexContainer{
+    width: 96%;
+    padding: 10px;
+    order: 0;
+    gap: 8px;
+  }
+  .tasklist-flexContainer{
+    width: 96%;
+    height: fit-content;
+    min-height: fit-content;
+    max-height: max-content;
+    padding: 8px;
+    gap: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+  }
+  .task-list{
+    min-width: 100%;
+    flex-direction: row;
+    gap: 15px;
+  }
+  
 }
